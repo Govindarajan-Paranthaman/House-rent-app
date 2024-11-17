@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #2a9df4;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    border: none;
+    border-radius: 5px;
+}
+
+#filters {
+    background: #f7f7f7;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#filters label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 5px;
+}
+
+#filters button {
+    background-color: #2a9df4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filters button:hover {
+    background-color: #217dbb;
+}
+
+#property-list {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.property-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.property-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-card .details {
+    padding: 15px;
+}
+
+.property-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.property-card p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.property-card button {
+    background-color: #2a9df4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.property-card button:hover {
+    background-color: #217dbb;
+}
